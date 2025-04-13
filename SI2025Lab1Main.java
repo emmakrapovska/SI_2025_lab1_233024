@@ -60,6 +60,7 @@ class TaskManager {
         }
     }
 HEAD
+HEAD
     public void removeTaskByName(String name) {
     	tasks.removeIf(task -> task.getName().equalsIgnoreCase(name));
     }
@@ -68,6 +69,15 @@ HEAD
     tasks.sort(Comparator.comparing(Task::getPriority));
 }
 5-sort-tasks-by-priority
+    public void markTaskAsCompleted(String name) {
+    for (Task task : tasks) {
+        if (task.getName().equalsIgnoreCase(name)) {
+            task.setCompleted(true);
+            break;
+        }
+    }
+}
+9-mark-a-task-as-completed-by-name
 
     // MISSING FEATURES:
 
