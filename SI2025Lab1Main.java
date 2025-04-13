@@ -59,6 +59,14 @@ class TaskManager {
             System.out.println(task);
         }
     }
+    public void markTaskAsCompleted(String name) {
+    for (Task task : tasks) {
+        if (task.getName().equalsIgnoreCase(name)) {
+            task.setCompleted(true);
+            break;
+        }
+    }
+}
 
     // MISSING FEATURES:
 
