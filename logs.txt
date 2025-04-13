@@ -1,0 +1,15 @@
+*   565579d Resolve merge conflict
+|\  
+| * d477c61 Implement markTaskAsCompleted
+* |   31bb6ff Resolve merge conflict
+|\ \  
+| * | 6d0f322 Implement sortTasksByPriority
+| |/  
+* |   68bebe9 Merge pull request #11 from emmakrapovska/2-remove-a-task-by-name
+|\ \  
+| |/  
+|/|   
+| * a54acb5 Implement removeTaskByName
+|/  
+* 59e7196 Add starter code
+* 19710d0 Initial commit
