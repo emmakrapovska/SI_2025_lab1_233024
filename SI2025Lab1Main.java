@@ -59,6 +59,9 @@ class TaskManager {
             System.out.println(task);
         }
     }
+    public void removeTaskByName(String name) {
+    	tasks.removeIf(task -> task.getName().equalsIgnoreCase(name));
+    }
 
     // MISSING FEATURES:
 
