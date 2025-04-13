@@ -59,6 +59,9 @@ class TaskManager {
             System.out.println(task);
         }
     }
+    public void sortTasksByPriority() {
+    tasks.sort(Comparator.comparing(Task::getPriority));
+}
 
     // MISSING FEATURES:
 
