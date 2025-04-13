@@ -59,9 +59,15 @@ class TaskManager {
             System.out.println(task);
         }
     }
+HEAD
     public void removeTaskByName(String name) {
     	tasks.removeIf(task -> task.getName().equalsIgnoreCase(name));
     }
+
+    public void sortTasksByPriority() {
+    tasks.sort(Comparator.comparing(Task::getPriority));
+}
+5-sort-tasks-by-priority
 
     // MISSING FEATURES:
 
